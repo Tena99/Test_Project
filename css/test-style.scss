@@ -38,6 +38,7 @@ body {
   line-height: 1;
   font-size: 16px;
   color: black;
+  background-color: grey;
 }
 
 .wrapper {
@@ -45,40 +46,29 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 header {
-  display: flex;
-  background-color: grey;
-  justify-content: space-between;
-  padding: 5px;
-
-  .logo {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-    border-radius: 50%;
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    li {
-      list-style: none;
-      a {
-        text-decoration: none;
-        color: black;
-        background-color: rgb(109, 198, 228);
-        padding: 5px 20px;
-        margin: 0px 10px;
-      }
-    }
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 20px 0;
   }
 }
 
-.main_banner {
-  .some_card {
-    margin-top: 30px;
-    padding: 5px;
-    background-color: grey;
+.main {
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+  }
+
+  p {
+    color: white;
   }
 }
