@@ -1,19 +1,45 @@
-// Task 14. Определить в каком регистре записан n-й символ строки.
-// Напишите функцию isUpperCase(str, character), которая определяет в каком регистре написан символ строки в указанной позиции.
-// Если в верхнем регистре выводится – true, если в нижнем – false.
+// Task 15.  Compact. Напишите функцию, которая очищает массив от нежелательных значений, таких как false, undefined, пустые строки, ноль, null.
 
+let result = "";
 
-function isUpperCase(str, pos) {
+const compact = (array) => {
 
-    tmp = str.substr(pos, 1);
-    console.log(tmp)
-
-    if (tmp == tmp.toUpperCase()) {
-        return true
-    } else {
-        return false
+    if (typeof (array) == "number") {
+        return array;
     }
+}
 
-};
+const data = [0, 1, false, 2, undefined, '', 3, null].filter(compact)
+console.log(data) // [1, 2, 3]
 
-console.log(isUpperCase('tasks JavaScript', 6)); // true
+
+// -------------------------------------------------------------------------------------------//
+
+// function isBigEnough(value) {
+//
+//     return value >= 10;
+//
+// }
+//
+// let filtered = [12, 10, 2, 8, 130].filter(isBigEnough)
+// console.log(filtered)
+//
+// // -------------------------------------------------------------------------------------------//
+//
+// let isBigEnough = function (value) {
+//     return value >= 10;
+// }
+//
+// let filtered = [12, 10, 2, 8, 130].filter(isBigEnough)
+// console.log(filtered)
+//
+// // -------------------------------------------------------------------------------------------//
+//
+// let isBigEnough = (value) => {
+//     return value >= 10;
+// }
+//
+// let filtered = [12, 10, 2, 8, 130].filter(isBigEnough)
+// console.log(filtered)
+
+// -------------------------------------------------------------------------------------------//
