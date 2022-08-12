@@ -1,16 +1,19 @@
-//Homework 16. Unique. Напишите функцию, которая убирает повторяющиеся значения.
+// ДЗ 19. isPlainObject. Напишите функцию, которая проверяет, является ли элемент именно простым объектом, а не массивом, null и т.п.
 
-const unique = (array) => {
-  let result = [];
-
-  for (let i = 0; i < array.length; i++) {
-    if (!result.includes(array[i])) {
-      result.push(array[i]);
-    }
+const isPlainObject = function (element) {
+  if (
+    typeof element === "object" &&
+    element !== null &&
+    !Array.isArray(element)
+  ) {
+    return true;
+  } else {
+    return false;
   }
-
-  return result;
 };
 
-const data = [1, 2, 1, 2, 3];
-console.log(unique(data)); // [1, 2, 3]
+const data = { a: 1 };
+const data2 = [1, 2, 3];
+
+console.log(isPlainObject(data)); // true
+console.log(isPlainObject(data2)); // false
