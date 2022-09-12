@@ -46,19 +46,10 @@ body {
   margin: auto;
 }
 
-header h1 {
-  font-weight: 700;
-  font-size: 32px;
-  background-color: rgb(58, 58, 58);
-  color: white;
-  padding: 20px 0;
+.box {
+  background-color: #0c63e4;
+  height: 300px;
+  width: 300px;
 }
 
-.main h2 {
-  font-weight: 600;
-  font-size: 24px;
-  color: white;
-}
-.main p {
-  color: white;
-}
+/*# sourceMappingURL=test-style.css.map */

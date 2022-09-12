@@ -1,9 +1,0 @@
-// Task 6. Вывести таблицу
-// Вывести таблицу умножения на 7.
-// Для вывода можно использовать - document.write('text');
-
-for (let i = 1; i < 11; i++) {
-  if (i == 10) {
-    document.write(`${i * 7} `);
-  } else document.write(`${i * 7} ,`);
-}
